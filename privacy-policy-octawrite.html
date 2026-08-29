@@ -1,41 +1,315 @@
-OctaWrite — Privacy Policy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — OctaWrite</title>
+<meta name="description" content="How the OctaWrite IELTS Writing app handles your information. Your writing stays on your phone, there is no account, and nothing identifies you.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0E3A38">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:        #0E3A38;
+    --ink-soft:   #3D5F5C;
+    --paper:      #F7F8F6;
+    --paper-deep: #ECEFEA;
+    --accent:     #E8622A;
+    --mint:       #DCEBE5;
+    --rule:       #CBD6D1;
 
-Last updated: 29 August 2026
+    --display: "Instrument Serif", Georgia, serif;
+    --body:    "Source Serif 4", Georgia, serif;
+    --mono:    "IBM Plex Mono", ui-monospace, monospace;
 
-OctaWrite is an IELTS Writing practice app for Android, published by Monu Sidhar. This policy explains what the app does with your information. The short version: your writing stays on your phone, there is no account, and the only things that use the internet are the AI evaluation you ask for and the ads in the free version.
+    --measure: 34rem;
+    --gutter:  clamp(1.25rem, 5vw, 3rem);
+  }
 
-1. Your essays stay on your device
-Your drafts, attempts, feedback, bookmarks, streak and settings are saved only on your phone, in the app's private storage. They are not uploaded to us. Uninstalling the app deletes all of it. You can also delete everything from Settings → Reset progress.
+  *,*::before,*::after{box-sizing:border-box}
 
-2. AI evaluation
-When you ask for an AI score, a grammar check, an outline or a vocabulary upgrade, the text you submit is sent over an encrypted connection to our relay server and from there to our AI provider (Groq, Inc.) to generate the reply. The text is used only to produce that reply. It is not stored on our server, not used to train any model, and not linked to you. If you never use an AI feature, no writing leaves your device.
+  html{-webkit-text-size-adjust:100%}
 
-3. What we collect
-Nothing that identifies you. The app has no account, login, name, email or phone number, and no analytics. When the app is installed it generates a random identifier that is attached to AI requests solely so the free daily allowance can be rate-limited per device. It is not connected to you or your Google account and changes if you reinstall.
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--body);
+    font-size:clamp(1rem,0.97rem + 0.18vw,1.0625rem);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
 
-4. Ads
-The free version shows ads served by Google AdMob. AdMob may collect your device's advertising identifier and usage signals to show and measure ads, under Google's Privacy Policy (https://policies.google.com/privacy). Where the law requires it, you are asked for consent before personalised ads are shown, and you can change that choice in the app at any time. Premium removes all ads.
+  a{color:var(--ink);text-decoration-color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1.5px}
+  a:hover{color:var(--accent)}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
 
-5. Payments
-Premium is purchased through Google Play Billing. Google processes the payment; we never see or store your card, UPI or bank details. The app keeps only a record that a purchase succeeded so it can unlock Premium, and Google's subscription service confirms it. Subscriptions renew automatically until cancelled in Play Store → Subscriptions.
+  .wrap{max-width:64rem;margin:0 auto;padding:0 var(--gutter)}
 
-6. Reminders
-If you turn on the daily practice reminder, it is scheduled on your device by Android itself. No notification is sent from a server.
+  /* ---------- masthead ---------- */
+  .masthead{
+    background:var(--ink);
+    color:var(--paper);
+    padding:clamp(2rem,6vw,3.5rem) 0 clamp(2.25rem,6vw,3.5rem);
+  }
+  .brandline{
+    display:flex;align-items:center;gap:.625rem;
+    font-family:var(--mono);font-size:.75rem;letter-spacing:.14em;
+    text-transform:uppercase;color:#9BBDB6;
+  }
+  .mark{
+    width:1.5rem;height:1.5rem;border-radius:.4rem;
+    background:var(--accent);
+    display:grid;place-items:center;
+    font-family:var(--display);font-size:1rem;color:var(--ink);
+    line-height:1;padding-bottom:.1em;
+  }
+  .masthead h1{
+    font-family:var(--display);font-weight:400;
+    font-size:clamp(2.75rem,10vw,5.5rem);
+    line-height:.95;letter-spacing:-0.015em;
+    margin:clamp(1.25rem,4vw,2rem) 0 0;
+    max-width:14ch;
+  }
+  .masthead h1 em{font-style:italic;color:#F0B49A}
+  .stamp{
+    margin-top:1.5rem;font-family:var(--mono);font-size:.75rem;
+    letter-spacing:.06em;color:#9BBDB6;
+  }
 
-7. Data retention
-We hold no personal data, so there is nothing to retain or delete on our side. Submitted essay text is discarded by the relay as soon as the AI reply is returned.
+  /* ---------- summary ---------- */
+  .summary{
+    background:var(--mint);
+    border-bottom:1px solid var(--rule);
+    padding:clamp(1.75rem,5vw,2.75rem) 0;
+  }
+  .summary-inner{max-width:var(--measure)}
+  .eyebrow{
+    font-family:var(--mono);font-size:.6875rem;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--ink-soft);margin:0 0 .75rem;
+  }
+  .summary p{
+    margin:0;font-size:clamp(1.125rem,1rem + 0.6vw,1.375rem);
+    line-height:1.5;
+  }
 
-8. Children's privacy
-OctaWrite is intended for people preparing for the IELTS exam and is not directed at children under 13. We do not knowingly collect information from children.
+  /* ---------- clauses ---------- */
+  main{padding:clamp(2.5rem,7vw,4.5rem) 0 1rem}
 
-9. Third parties
-The only third parties that receive any data are Google (AdMob, Play Billing) and Groq (AI replies), each for the purpose described above. We do not sell data to anyone.
+  .clause{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:.75rem;
+    padding-bottom:clamp(2rem,5vw,2.75rem);
+    margin-bottom:clamp(2rem,5vw,2.75rem);
+    border-bottom:1px solid var(--rule);
+  }
+  .clause:last-of-type{border-bottom:0}
 
-10. Changes
-If this policy changes, the updated version will be published at this address and inside the app, with a new "last updated" date.
+  .gloss{
+    font-family:var(--mono);font-size:.75rem;line-height:1.5;
+    letter-spacing:.02em;color:var(--ink-soft);
+    border-left:2px solid var(--accent);
+    padding-left:.75rem;
+  }
+  .gloss .num{display:block;color:var(--accent);font-weight:500}
 
-11. Not affiliated
-OctaWrite is not affiliated with, endorsed by, or connected to IELTS, the British Council, IDP Education or Cambridge Assessment English.
+  .clause h2{
+    font-family:var(--display);font-weight:400;
+    font-size:clamp(1.5rem,1.2rem + 1.1vw,2rem);
+    line-height:1.15;letter-spacing:-0.01em;
+    margin:0 0 .625rem;
+  }
+  .clause p{margin:0 0 .875rem;max-width:var(--measure)}
+  .clause p:last-child{margin-bottom:0}
 
-12. Contact
-Questions about privacy? Email monusidhar91@gmail.com and you will get a reply from a person.
+  mark{
+    background:linear-gradient(transparent 62%, var(--mint) 62%);
+    color:inherit;padding:0 .1em;
+  }
+
+  @media (min-width:56rem){
+    .clause{grid-template-columns:11rem 1fr;gap:2.5rem;align-items:start}
+    .gloss{position:sticky;top:2rem}
+  }
+
+  /* ---------- footer ---------- */
+  footer{
+    background:var(--ink);color:var(--paper);
+    margin-top:clamp(2rem,6vw,4rem);
+    padding:clamp(2.25rem,6vw,3.5rem) 0;
+  }
+  footer h2{
+    font-family:var(--display);font-weight:400;
+    font-size:clamp(1.75rem,1.4rem + 1.4vw,2.5rem);
+    line-height:1.1;margin:.5rem 0 1rem;
+  }
+  footer p{max-width:var(--measure);color:#C6DAD5;margin:0 0 1.5rem}
+  footer a{color:var(--paper);text-decoration-color:var(--accent)}
+  footer a:hover{color:#F0B49A}
+  .mailto{
+    display:inline-block;font-family:var(--mono);font-size:.875rem;
+    background:var(--accent);color:var(--ink);
+    padding:.75rem 1.25rem;border-radius:.375rem;
+    text-decoration:none;letter-spacing:.02em;
+  }
+  .mailto:hover{background:#F0B49A;color:var(--ink)}
+  .colophon{
+    margin-top:clamp(2rem,5vw,3rem);padding-top:1.5rem;
+    border-top:1px solid #24534F;
+    font-family:var(--mono);font-size:.6875rem;letter-spacing:.08em;
+    text-transform:uppercase;color:#7FA8A1;
+    display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  }
+
+  @media print{
+    .masthead,footer{background:#fff;color:#000}
+    .masthead h1 em,.gloss .num{color:#000}
+    .gloss{position:static;border-left:2px solid #000}
+    .summary{background:#fff}
+    mark{background:none;text-decoration:underline}
+    .mailto{background:none;color:#000;padding:0;text-decoration:underline}
+    body{font-size:11pt}
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="brandline"><span class="mark" aria-hidden="true">O</span> OctaWrite &nbsp;·&nbsp; IELTS Writing</div>
+    <h1>Privacy <em>Policy</em></h1>
+    <p class="stamp">Last updated 29 August 2026 &nbsp;·&nbsp; Published by Monu Sidhar</p>
+  </div>
+</header>
+
+<section class="summary">
+  <div class="wrap">
+    <div class="summary-inner">
+      <p class="eyebrow">The short version</p>
+      <p>Your writing stays on your phone, there is no account, and the only things that use the internet are the AI evaluation you ask for and the ads in the free version.</p>
+    </div>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+
+    <article class="clause">
+      <aside class="gloss"><span class="num">01</span>Nothing is uploaded. Uninstalling deletes it all.</aside>
+      <div>
+        <h2>Your essays stay on your device</h2>
+        <p>Your drafts, attempts, feedback, bookmarks, streak and settings are saved only on your phone, in the app's private storage. They are not uploaded to us.</p>
+        <p>Uninstalling the app deletes all of it. You can also delete everything from <mark>Settings → Reset progress</mark>.</p>
+      </div>
+    </article>
+
+    <article class="clause">
+      <aside class="gloss"><span class="num">02</span>Only the text you choose to submit ever leaves the phone.</aside>
+      <div>
+        <h2>AI evaluation</h2>
+        <p>When you ask for an AI score, a grammar check, an outline or a vocabulary upgrade, the text you submit is sent over an encrypted connection to our relay server and from there to our AI provider (Groq, Inc.) to generate the reply.</p>
+        <p>The text is used only to produce that reply. It is not stored on our server, not used to train any model, and not linked to you. If you never use an AI feature, no writing leaves your device.</p>
+      </div>
+    </article>
+
+    <article class="clause">
+      <aside class="gloss"><span class="num">03</span>No account. No analytics. Nothing that names you.</aside>
+      <div>
+        <h2>What we collect</h2>
+        <p>Nothing that identifies you. The app has no account, login, name, email or phone number, and no analytics.</p>
+        <p>When the app is installed it generates a random identifier that is attached to AI requests solely so the free daily allowance can be rate-limited per device. It is not connected to you or your Google account, and it changes if you reinstall.</p>
+      </div>
+    </article>
+
+    <article class="clause">
+      <aside class="gloss"><span class="num">04</span>AdMob, in the free version only.</aside>
+      <div>
+        <h2>Ads</h2>
+        <p>The free version shows ads served by Google AdMob. AdMob may collect your device's advertising identifier and usage signals to show and measure ads, under <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+        <p>Where the law requires it, you are asked for consent before personalised ads are shown, and you can change that choice in the app at any time. Premium removes all ads.</p>
+      </div>
+    </article>
+
+    <article class="clause">
+      <aside class="gloss"><span class="num">05</span>Google handles the money. We never see your card.</aside>
+      <div>
+        <h2>Payments</h2>
+        <p>Premium is purchased through Google Play Billing. Google processes the payment; we never see or store your card, UPI or bank details.</p>
+        <p>The app keeps only a record that a purchase succeeded so it can unlock Premium, and Google's subscription service confirms it. Subscriptions renew automatically until cancelled in <mark>Play Store → Subscriptions</mark>.</p>
+      </div>
+    </article>
+
+    <article class="clause">
+      <aside class="gloss"><span class="num">06</span>Scheduled by your phone, not by a server.</aside>
+      <div>
+        <h2>Reminders</h2>
+        <p>If you turn on the daily practice reminder, it is scheduled on your device by Android itself. No notification is sent from a server.</p>
+      </div>
+    </article>
+
+    <article class="clause">
+      <aside class="gloss"><span class="num">07</span>We hold no personal data, so there is none to keep.</aside>
+      <div>
+        <h2>Data retention</h2>
+        <p>We hold no personal data, so there is nothing to retain or delete on our side. Submitted essay text is discarded by the relay as soon as the AI reply is returned.</p>
+      </div>
+    </article>
+
+    <article class="clause">
+      <aside class="gloss"><span class="num">08</span>Built for exam candidates, not for under-13s.</aside>
+      <div>
+        <h2>Children's privacy</h2>
+        <p>OctaWrite is intended for people preparing for the IELTS exam and is not directed at children under 13. We do not knowingly collect information from children.</p>
+      </div>
+    </article>
+
+    <article class="clause">
+      <aside class="gloss"><span class="num">09</span>Google and Groq. Nobody else. Nothing sold.</aside>
+      <div>
+        <h2>Third parties</h2>
+        <p>The only third parties that receive any data are Google (AdMob, Play Billing) and Groq (AI replies), each for the purpose described above. We do not sell data to anyone.</p>
+      </div>
+    </article>
+
+    <article class="clause">
+      <aside class="gloss"><span class="num">10</span>Check the date at the top of this page.</aside>
+      <div>
+        <h2>Changes</h2>
+        <p>If this policy changes, the updated version will be published at this address and inside the app, with a new "last updated" date.</p>
+      </div>
+    </article>
+
+    <article class="clause">
+      <aside class="gloss"><span class="num">11</span>An independent app. No official connection.</aside>
+      <div>
+        <h2>Not affiliated</h2>
+        <p>OctaWrite is not affiliated with, endorsed by, or connected to IELTS, the British Council, IDP Education or Cambridge Assessment English.</p>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="eyebrow" style="color:#7FA8A1">12 · Contact</p>
+    <h2>Questions about privacy?</h2>
+    <p>Email us and you will get a reply from a person.</p>
+    <a class="mailto" href="mailto:monusidhar91@gmail.com">monusidhar91@gmail.com</a>
+    <div class="colophon">
+      <span>OctaWrite</span>
+      <span>Published by Monu Sidhar</span>
+      <span>Last updated 29 Aug 2026</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
