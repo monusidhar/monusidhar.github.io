@@ -30,7 +30,7 @@
   <li>Cached AI explanations you have already requested</li>
   <li>A random install identifier (see section 3)</li>
 </ul>
-<p>You can delete all of it at any time: <strong>Settings → Clear all data</strong>. Uninstalling the app also removes it.</p>
+<p>You can delete all of it at any time: <strong>Settings → Delete all my data</strong>. Uninstalling the app also removes it.</p>
 
 <h2>2. Audio: the app plays, it never records</h2>
 <p>Every recording you hear is generated on your phone by its own text-to-speech engine from a written script. OctaListen does not request the microphone permission, does not record audio, and does not send audio anywhere. Your phone's text-to-speech engine (for example Google Text-to-Speech) is a separate app governed by its own policy; OctaListen only asks it to speak text on the device.</p>
@@ -39,7 +39,7 @@
 <table>
 <tr><th>Feature</th><th>Data sent</th><th>To whom</th><th>When</th></tr>
 <tr>
-  <td>AI explanations ("Ask Octa")</td>
+  <td>AI explanations ("Explain this answer")</td>
   <td>The question text, the accepted answer, your answer, a few lines of the transcript around the answer, and the random install identifier. Never your name, email or any other content.</td>
   <td>Our own proxy server (Cloudflare Workers), which forwards the request to the AI provider (Groq) and returns the explanation. The proxy applies rate limits per install identifier to prevent abuse.</td>
   <td>Only when you tap an AI feature. Cached explanations are served from your device without any request.</td>
@@ -80,7 +80,7 @@
 <p>On-device data remains until you clear it or uninstall the app. The AI proxy does not store request content; rate-limit counters expire within 24 hours. Analytics data is retained according to Google Firebase's standard retention settings.</p>
 
 <h2>9. Your rights</h2>
-<p>Because the app holds no account and no personal profile, the data you control is on your device. To delete it, use Settings → Clear all data or uninstall. For any question or request about this policy, email <a href="mailto:monusidhar91@gmail.com">monusidhar91@gmail.com</a>.</p>
+<p>Because the app holds no account and no personal profile, the data you control is on your device. To delete it, use Settings → Delete all my data or uninstall. For any question or request about this policy, email <a href="mailto:monusidhar91@gmail.com">monusidhar91@gmail.com</a>.</p>
 
 <h2>10. Third-party policies</h2>
 <ul>
